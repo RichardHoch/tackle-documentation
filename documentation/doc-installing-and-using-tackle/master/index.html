@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8">
+
+<!-- Begin Jekyll SEO tag v2.7.1 -->
+<title>Installing and using Tackle | Tackle Documentation</title>
+<meta name="generator" content="Jekyll v3.9.0" />
+<meta property="og:title" content="Installing and using Tackle" />
+<meta name="author" content="Tackle documentation team" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Tackle documentation" />
+<meta property="og:description" content="Tackle documentation" />
+<meta property="og:site_name" content="Tackle Documentation" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Installing and using Tackle" />
+<script type="application/ld+json">
+{"author":{"@type":"Person","name":"Tackle documentation team"},"url":"/documentation/doc-installing-and-using-tackle/master/","description":"Tackle documentation","@type":"WebPage","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"/assets/img/konveyor-logo-tackle.svg"},"name":"Tackle documentation team"},"headline":"Installing and using Tackle","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#157878">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <link rel="stylesheet" href="/assets/css/style.css?v=614f056678e59fd0a4fe2428c67b45f9c56755bc">
+    <link rel="shortcut icon" type="image/png" href="images/favicon.png">
+  </head>
+  <body>
+    <header class="page-header">
+        
+          <a href="/"><img src="/assets/img/konveyor-logo-tackle.svg" alt="Tackle Documentation" width="200" /></a><br>
+        
+      
+        <a href="https://github.com/konveyor/tackle-documentation" class="btn">View on GitHub</a>
+      
+      
+    </header>
+
+    <main id="content" class="main-content" role="main">
+      <h1>Installing and using Tackle (draft)</h1>
+<div id="toc" class="toc">
+<div id="toctitle"></div>
+<ul class="sectlevel1">
+<li><a href="#about-pathfinder_tackle">About Tackle</a></li>
+<li><a href="#installing-pathfinder_tackle">Installing Tackle</a></li>
+<li><a href="#managing-stakeholders-job-functions-business-services-and-tags_tackle">Managing the Controls</a>
+<ul class="sectlevel2">
+<li><a href="#creating-stakeholder_tackle">Creating a stakeholder</a></li>
+<li><a href="#creating-stakeholder-group_tackle">Creating a stakeholder group</a></li>
+<li><a href="#creating-business-service_tackle">Creating a business service</a></li>
+<li><a href="#creating-tag-type_tackle">Creating a tag type</a></li>
+<li><a href="#creating-tag_tackle">Creating a tag</a></li>
+</ul>
+</li>
+<li><a href="#managing-applications_tackle">Managing the Application Inventory</a>
+<ul class="sectlevel2">
+<li><a href="#creating-application_tackle">Creating an application</a></li>
+<li><a href="#importing-applications_tackle">Importing applications</a></li>
+<li><a href="#tagging-applications_tackle">Tagging applications</a></li>
+<li><a href="#adding-business-service-to-applications_tackle">Adding a business service to applications</a></li>
+<li><a href="#managing-application-dependencies_tackle">Managing application dependencies</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="sect1">
+<h2 id="about-pathfinder_tackle">About Tackle</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Tackle is a cloud-native application that assesses your applications to gauge whether the applications are suitable for rehosting on OpenShift Container Platform.</p>
+</div>
+<div class="paragraph">
+<p>Tackle uses an interactive questionnaire for the assessment. The assessment process enables key stakeholders, led by a Solution Architect, to gather information about applications, to discuss risks flagged by Tackle, and to reach a consensus in formulating recommendations for each application.</p>
+</div>
+<div class="paragraph">
+<p>Tackle provides the following services in a web console:</p>
+</div>
+<div class="dlist">
+<dl>
+<dt class="hdlist1">Controls</dt>
+<dd>
+<p>The Controls enable you to manage the following:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Stakeholders and stakeholder groups</p>
+</li>
+<li>
+<p>Job functions</p>
+</li>
+<li>
+<p>Business services</p>
+</li>
+<li>
+<p>Tags and tag types</p>
+</li>
+</ul>
+</div>
+</dd>
+<dt class="hdlist1">Application Inventory</dt>
+<dd>
+<p>The Application Inventory enables you to manage your application portfolio and to group applications for assessment.</p>
+</dd>
+<dt class="hdlist1">Reports</dt>
+<dd>
+<p>Reports display the results of the assessments of applications in the Application Inventory. The reports are dynamic and can be configured to display the results for a filtered list of applications.</p>
+</dd>
+</dl>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="installing-pathfinder_tackle">Installing Tackle</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>TBD</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="managing-stakeholders-job-functions-business-services-and-tags_tackle">Managing the Controls</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The <strong>Controls</strong> page of the Tackle web console enables you to manage the following:</p>
+</div>
+<div class="dlist">
+<dl>
+<dt class="hdlist1">Stakeholder</dt>
+<dd>
+<p>Individual with an interest in an application or a subject matter expert. Stakeholders are contributors to the application assessment process.</p>
+</dd>
+<dt class="hdlist1">Stakeholder group</dt>
+<dd>
+<p>Group of related stakeholders. A stakeholder can belong to one or more stakeholder groups. Stakeholder groups are used to assign multiple stakeholders to review an assessment.</p>
+</dd>
+<dt class="hdlist1">Job function</dt>
+<dd>
+<p>Attribute of a stakeholder. You can define a new job function or use predefined job functions, for example, Business Analyst or Program Manager.</p>
+</dd>
+<dt class="hdlist1">Business service</dt>
+<dd>
+<p>Attribute of an application, for example, credit card service, transportation, or IT support. A business service is owned by a stakeholder.</p>
+</dd>
+<dt class="hdlist1">Tag</dt>
+<dd>
+<p>Attribute of an application. Tags are used for creating filters and searches. Each tag is associated with a <em>tag type</em> that determines its display rank and color and enables you to group related tags.</p>
+</dd>
+</dl>
+</div>
+<div class="sect2">
+<h3 id="creating-stakeholder_tackle">Creating a stakeholder</h3>
+<div class="paragraph">
+<p>You can create a stakeholder in the <strong>Controls</strong> page of the Tackle web console.</p>
+</div>
+<div class="ulist">
+<div class="title">Prerequisites</div>
+<ul>
+<li>
+<p>The stakeholder must have a valid email address.</p>
+</li>
+</ul>
+</div>
+<div class="olist arabic">
+<div class="title">Procedure</div>
+<ol class="arabic">
+<li>
+<p>Click <strong>Controls</strong> and then click <strong>Stakeholders</strong>.</p>
+</li>
+<li>
+<p>Click <strong>Create new</strong>.</p>
+</li>
+<li>
+<p>Complete the following fields:</p>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Email</strong>: Email address of the stakeholder.</p>
+</li>
+<li>
+<p><strong>Display name</strong>: Name of the stakeholder.</p>
+</li>
+<li>
+<p><strong>Job function</strong>: Optional. You can select a predefined job function or type a job function to create it.</p>
+</li>
+<li>
+<p><strong>Groups</strong>: Optional. You can select one or more stakeholder groups from a list of stakeholder groups that you have created.</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Click <strong>Create</strong>.</p>
+<div class="paragraph">
+<p>The new stakeholder is displayed in the <strong>Stakeholders</strong> tab of the <strong>Controls</strong> page.</p>
+</div>
+</li>
+<li>
+<p>Expand the stakeholder to view the stakeholder groups to which the stakeholder belongs.</p>
+</li>
+</ol>
+</div>
+</div>
+<div class="sect2">
+<h3 id="creating-stakeholder-group_tackle">Creating a stakeholder group</h3>
+<div class="paragraph">
+<p>You can create stakeholder groups in the <strong>Controls</strong> page of the Tackle web console. Stakeholder groups enable you to assign multiple stakeholders to review an assessment.</p>
+</div>
+<div class="olist arabic">
+<div class="title">Procedure</div>
+<ol class="arabic">
+<li>
+<p>Click <strong>Controls</strong> and then click <strong>Stakeholder groups</strong>.</p>
+</li>
+<li>
+<p>Click <strong>Create new</strong>.</p>
+</li>
+<li>
+<p>Complete the following fields:</p>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Name</strong>: Name of the stakeholder group.</p>
+</li>
+<li>
+<p><strong>Description</strong>: Optional. Description of the stakeholder group.</p>
+</li>
+<li>
+<p><strong>Member(s)</strong>: Optional. You can select one or more stakeholders to add to the group.</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Click <strong>Create</strong>.</p>
+<div class="paragraph">
+<p>The new stakeholder group is displayed in the <strong>Stakeholder groups</strong> tab of the <strong>Controls</strong> page.</p>
+</div>
+</li>
+<li>
+<p>Expand the stakeholder group to view the group members.</p>
+</li>
+</ol>
+</div>
+</div>
+<div class="sect2">
+<h3 id="creating-business-service_tackle">Creating a business service</h3>
+<div class="paragraph">
+<p>A business service is an attribute of an application. You can create a business service in the <strong>Controls</strong> page of the Tackle web console.</p>
+</div>
+<div class="ulist">
+<div class="title">Prerequisites</div>
+<ul>
+<li>
+<p>You must have added a stakeholder who is the business service <em>owner</em>.</p>
+</li>
+</ul>
+</div>
+<div class="olist arabic">
+<div class="title">Procedure</div>
+<ol class="arabic">
+<li>
+<p>Click <strong>Controls</strong> and then click <strong>Business services</strong>.</p>
+</li>
+<li>
+<p>Click <strong>Create new</strong>.</p>
+</li>
+<li>
+<p>Complete the following fields:</p>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Name</strong>: Name of the business service.</p>
+</li>
+<li>
+<p><strong>Description</strong>: Optional. Description of the business service.</p>
+</li>
+<li>
+<p><strong>Owner</strong>: Select a stakeholder.</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Click <strong>Create</strong>.</p>
+<div class="paragraph">
+<p>The new business service is displayed in the <strong>Business services</strong> tab of the <strong>Controls</strong> page.</p>
+</div>
+</li>
+</ol>
+</div>
+</div>
+<div class="sect2">
+<h3 id="creating-tag-type_tackle">Creating a tag type</h3>
+<div class="paragraph">
+<p>You can create a tag type in the <strong>Controls</strong> page of the Tackle web console.</p>
+</div>
+<div class="paragraph">
+<p>A tag type defines the display rank and color of one or more tags. Tags are applied to applications in order to create filters and groups of applications.</p>
+</div>
+<div class="paragraph">
+<p>You must create a tag type before you can create a tag.</p>
+</div>
+<div class="olist arabic">
+<div class="title">Procedure</div>
+<ol class="arabic">
+<li>
+<p>Click <strong>Controls</strong> and then click <strong>Tags</strong>.</p>
+</li>
+<li>
+<p>Click <strong>Create tag type</strong>.</p>
+</li>
+<li>
+<p>Complete the following fields:</p>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Name</strong>: Name of the tag type.</p>
+</li>
+<li>
+<p><strong>Rank</strong>: Optional. The rank determines the order in which the tags are displayed in the details view of an application.</p>
+</li>
+<li>
+<p><strong>Color</strong>: Optional. You can select a display color.</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Click <strong>Create</strong>.</p>
+<div class="paragraph">
+<p>The new tag type is displayed in the <strong>Tags</strong> tab of the <strong>Controls</strong> page.</p>
+</div>
+</li>
+</ol>
+</div>
+</div>
+<div class="sect2">
+<h3 id="creating-tag_tackle">Creating a tag</h3>
+<div class="paragraph">
+<p>You can create a tag in the <strong>Controls</strong> page of the Tackle web console.</p>
+</div>
+<div class="paragraph">
+<p>Tags are applied to applications in the <strong>Application Inventory</strong> page for filtering and searching applications. Tags are grouped by tag types.</p>
+</div>
+<div class="ulist">
+<div class="title">Prerequisites</div>
+<ul>
+<li>
+<p>You must have created at least one tag type.</p>
+<div class="paragraph">
+<p>A <em>tag type</em> defines the display rank and color of one or more tags.</p>
+</div>
+</li>
+</ul>
+</div>
+<div class="olist arabic">
+<div class="title">Procedure</div>
+<ol class="arabic">
+<li>
+<p>Click <strong>Controls</strong> and then click <strong>Tags</strong>.</p>
+</li>
+<li>
+<p>Click <strong>Create tag</strong>.</p>
+</li>
+<li>
+<p>Complete the following fields:</p>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Name</strong>: Name of the tag.</p>
+</li>
+<li>
+<p><strong>Tag type</strong>: Select a tag type.</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Click <strong>Create</strong>.</p>
+<div class="paragraph">
+<p>The new tag is displayed under its tag type in <strong>Tags</strong> tab of the <strong>Controls</strong> page.</p>
+</div>
+</li>
+</ol>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="managing-applications_tackle">Managing the Application Inventory</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>You can manage your application portfolio in the <strong>Application Inventory</strong> page of the Tackle web console.</p>
+</div>
+<div class="sect2">
+<h3 id="creating-application_tackle">Creating an application</h3>
+<div class="paragraph">
+<p>You can create an application in the <strong>Application Inventory</strong> page of the Tackle web console.</p>
+</div>
+<div class="olist arabic">
+<div class="title">Procedure</div>
+<ol class="arabic">
+<li>
+<p>Click <strong>Application Inventory</strong> and then click <strong>Create new</strong>.</p>
+</li>
+<li>
+<p>Complete the following fields:</p>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Name</strong>: Name of the application.</p>
+</li>
+<li>
+<p><strong>Description</strong>: Optional. Description of the application.</p>
+</li>
+<li>
+<p><strong>Business service</strong>: Optional. You can select a business service that describes the application.</p>
+</li>
+<li>
+<p><strong>Tags</strong>: Optional. You can select one or more tags from a list of tags that you have defined.</p>
+</li>
+<li>
+<p><strong>Comments</strong>: Optional. Comments about the application.</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Click <strong>Create</strong>.</p>
+<div class="paragraph">
+<p>The new application is displayed in the <strong>Application Inventory</strong> page.</p>
+</div>
+</li>
+<li>
+<p>Expand the application to view its details.</p>
+</li>
+</ol>
+</div>
+</div>
+<div class="sect2">
+<h3 id="importing-applications_tackle">Importing applications</h3>
+<div class="paragraph">
+<p>You can import multiple applications into the <strong>Application Inventory</strong> page of the Tackle web console by using a CSV file.</p>
+</div>
+<div class="paragraph">
+<p>The CSV file must contain the following fields:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><code>Record Type 1</code>: Required field. The value must be <code>1</code>.</p>
+</li>
+<li>
+<p><code>Application Name</code>: Required field.</p>
+</li>
+<li>
+<p><code>Description</code>: Optional.</p>
+</li>
+<li>
+<p><code>Comments</code>: Optional.</p>
+</li>
+<li>
+<p><code>Business Service</code>: Optional.</p>
+</li>
+<li>
+<p><code>Tag Type 1</code>: Optional unless you are creating a tag.</p>
+</li>
+<li>
+<p><code>Tag 1</code>: Optional. If you create a tag, it must have a corresponding <code>Tag Type</code>.</p>
+<div class="paragraph">
+<p>You can create <code>Tag Type &lt;number&gt;</code> and <code>Tag &lt;number&gt;</code> fields for additional tags.</p>
+</div>
+</li>
+</ul>
+</div>
+<div class="olist arabic">
+<div class="title">Procedure</div>
+<ol class="arabic">
+<li>
+<p>Click <strong>Application Inventory</strong>.</p>
+</li>
+<li>
+<p>Click the Options menu <span class="image"><img src="../modules/images/kebab.png" alt="kebab" height="20" title="Options menu"></span> in the toolbar and select <strong>Import</strong>.</p>
+</li>
+<li>
+<p>Browse to the CSV file and click <strong>Open</strong>.</p>
+</li>
+<li>
+<p>Click <strong>Import</strong>.</p>
+<div class="paragraph">
+<p>The imported applications are displayed in the Application Inventory.</p>
+</div>
+</li>
+</ol>
+</div>
+</div>
+<div class="sect2">
+<h3 id="tagging-applications_tackle">Tagging applications</h3>
+<div class="paragraph">
+<p>You can tag one or more applications in the <strong>Application Inventory</strong> page of the Tackle web console.</p>
+</div>
+<div class="ulist">
+<div class="title">Prerequisites</div>
+<ul>
+<li>
+<p>The <strong>Application Inventory</strong> must contain at least one application.</p>
+</li>
+<li>
+<p>The <strong>Controls</strong> must contain at least one tag.</p>
+</li>
+</ul>
+</div>
+<div class="olist arabic">
+<div class="title">Procedure</div>
+<ol class="arabic">
+<li>
+<p>Click <strong>Application Inventory</strong>.</p>
+</li>
+<li>
+<p>Select one or more applications.</p>
+</li>
+<li>
+<p>Click the Options menu <span class="image"><img src="../modules/images/kebab.png" alt="kebab" height="20" title="Options menu"></span> in the toolbar and select <strong>Add tag</strong>.</p>
+</li>
+<li>
+<p>Select one or more tags and then click <strong>Apply tags</strong>.</p>
+</li>
+<li>
+<p>Expand an application to view its details.</p>
+<div class="paragraph">
+<p>The display order of the tags is determined by the <strong>Rank</strong> of the tag type.</p>
+</div>
+</li>
+</ol>
+</div>
+</div>
+<div class="sect2">
+<h3 id="adding-business-service-to-applications_tackle">Adding a business service to applications</h3>
+<div class="paragraph">
+<p>You can add a business service to one or more applications in the Application Inventory.</p>
+</div>
+<div class="ulist">
+<div class="title">Prerequisites</div>
+<ul>
+<li>
+<p>The Application Inventory must contain at least one application.</p>
+</li>
+<li>
+<p>The Controls must contain a business service.</p>
+</li>
+</ul>
+</div>
+<div class="olist arabic">
+<div class="title">Procedure</div>
+<ol class="arabic">
+<li>
+<p>Click <strong>Application Inventory</strong>.</p>
+</li>
+<li>
+<p>Select one or more applications.</p>
+</li>
+<li>
+<p>Click the Options menu <span class="image"><img src="../modules/images/kebab.png" alt="kebab" height="20" title="Options menu"></span> in the toolbar and select <strong>Add business service</strong>.</p>
+</li>
+<li>
+<p>Select a business service and then click <strong>Add</strong>.</p>
+</li>
+<li>
+<p>Expand an application to its details.</p>
+<div class="paragraph">
+<p>The business service is displayed.</p>
+</div>
+</li>
+</ol>
+</div>
+</div>
+<div class="sect2">
+<h3 id="managing-application-dependencies_tackle">Managing application dependencies</h3>
+<div class="paragraph">
+<p>You can add, delete, and view application dependencies in the <strong>Application Inventory</strong> page of the Tackle web console.</p>
+</div>
+<div class="ulist">
+<div class="title">Prerequisites</div>
+<ul>
+<li>
+<p>The <strong>Application Inventory</strong> must contain at least two applications.</p>
+</li>
+</ul>
+</div>
+<div class="olist arabic">
+<div class="title">Procedure</div>
+<ol class="arabic">
+<li>
+<p>Click <strong>Application Inventory</strong>.</p>
+</li>
+<li>
+<p>Click the Options menu <span class="image"><img src="../modules/images/kebab.png" alt="kebab" height="20" title="Options menu"></span> beside an application and select <strong>Manage dependencies</strong>.</p>
+</li>
+<li>
+<p>Select applications in the northbound or southbound dependencies fields.</p>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>To remove dependencies, delete the applications in the dependencies fields.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</li>
+<li>
+<p>Click <strong>Close</strong>.</p>
+</li>
+</ol>
+</div>
+</div>
+</div>
+</div>
+
+      <footer class="site-footer">
+        
+          <span class="site-footer-owner"><a href="https://github.com/konveyor/tackle-documentation">tackle-documentation</a> is maintained by <a href="https://github.com/konveyor">konveyor</a>.</span>
+        
+      </footer>
+    </main>
+  </body>
+</html>
