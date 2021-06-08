@@ -55,3 +55,11 @@ include::modules/importing-applications.adoc[leveloffset=+2]
 include::modules/tagging-applications.adoc[leveloffset=+2]
 include::modules/adding-business-service-to-applications.adoc[leveloffset=+2]
 include::modules/managing-application-dependencies.adoc[leveloffset=+2]
+
+== Viewing the Report
+
+{project-name} generates a report that describes the difficulty of modifying each application in a project for migration or modernization and recommends the order in which each application shouldd be modified.
+
+You can see this report in the *Report* page of the {project-name} web console.
+
+include::modules/con_about-report.adoc[leveloffset=+2]
